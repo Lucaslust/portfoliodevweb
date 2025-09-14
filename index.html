@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seu Nome — Portfólio</title>
+  <meta name="description" content="Portfólio profissional — HTML5, CSS3 e JS (SPA)">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Voltar ao topo">
+      <img src="assets/fotoperfil.png" alt="" class="brand-icon" width="28" height="28">
+      <span class="brand-name">Lucas Lustosa</span>
+    </a>
+
+    <button id="themeToggle" class="btn ghost" aria-label="Alternar modo claro/escuro">
+      <span class="icon">🌓</span>
+      <span class="label">Modo</span>
+    </button>
+
+    <button class="btn ghost menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir/fechar navegação">☰</button>
+
+    <nav id="siteNav" class="site-nav" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero__text">
+        <h1><span class="accent">Lucas Lustosa</span>.</h1>
+        <p class="subtitle">Ciência de Dados • Desenvolvimento • Estudante de Computação</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn" href="assets/Curriculo (2).pdf" target="_blank" rel="noopener">Baixar CV</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img class="avatar" src="assets/fotoperfil.png" alt="Foto/Avatar do(a) profissional" width="280" height="280" />
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <h2>Sobre</h2>
+      <p>
+        “Sou estudante de Ciência da Computação na UNIFOR, com foco em dados. Gosto de transformar problemas de negócio em soluções enxutas e acessíveis.
+         Trabalho na Mdias Branco, automatizando processos, analisando dados e resolvendo problemas”
+      </p>
+      <ul class="facts">
+        <li> Fortaleza, CE</li>
+        <li>Bacharelado em Ciência da Computação — UNIFOR</li>
+        <li>Estágio/Trabalho atual: Cientista de dados pela Mdias Branco</li>
+      </ul>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2>Projetos</h2>
+      <div class="grid cards">
+        <!-- Projeto: DataScience -->
+        <article class="card">
+          <h3>DataScience — Repositório</h3>
+          <p>Conjunto de estudos e projetos em ciência de dados (notebooks e scripts). Foco em limpeza, EDA, visualização e pequenos experimentos.</p>
+          <div class="card-actions">
+            <a class="btn" href="https://github.com/Lucaslust/DataScience" target="_blank" rel="noopener">Ver README</a>
+          </div>
+        </article>
+
+        <!-- Projeto: Criptolé — FGV Datathon -->
+        <article class="card">
+          <h3>Criptolé — FGV Datathon (3º lugar)</h3>
+          <p>Administrador de portfólio com <em>Reinforcement Learning</em>, ajustado ao perfil do investidor (conservador, moderado, agressivo) e recompensa alinhada ao suitability ANBIMA. Competição de nível nacional — eu e minha equipe ficamos em 3º lugar.</p>
+          <div class="card-actions">
+            <a class="btn" href="C:\Users\lucas\Downloads\portfolio-spa\assets\Criptolé - FGV DATATHON(1).pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+          <div style="margin-top:.6rem;">
+            <a href="https://unifor.br/-/alunos-da-unifor-conquistam-premio-nacional-com-projeto-inovador-sobre-criptomoedas-1"
+              target="_blank" rel="noopener">Reportagem (Unifor)</a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <h2>Habilidades</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Java</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Excel Avançado</span>
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section">
+      <h2>Experiência</h2>
+      <div class="timeline">
+        <article>
+          <h3>Mdias Branco — Cientista de dados</h3>
+          <span class="time">03/2025 — atual</span>
+          <p>Automatizando processos, criando insights com dados, Power BIs, Dashboards, criando caminhos para soluções com IA.</p>
+          <ul>
+            <li>Automatização de relatórios semanais e mensais, reduzindo o tempo gasto em mais de 75%.</li>
+            <li>Desenvolvimento de dashboards interativos para monitoramento de KPIs.</li>
+            <li>Análise preditiva para otimização de estoque, resultando em uma redução de 11% nos custos do setor industrial.</li>
+          </ul>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p>Curtiu o que viu? Vamos conversar.</p>
+      <div class="contact">
+        <a class="btn primary" href="mailto:lucaslustosadias@gmail.com">lucaslustosadias@gmail.com</a>
+        <button class="btn ghost" id="copyEmail" data-email="lucaslustosadias@gmail.com">Copiar e-mail</button>
+        <div class="social">
+          <a href="https://github.com/Lucaslust"
+            aria-label="GitHub"
+            target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/lucas-lustosa-da-costa-dias-4a8924333/"
+            aria-label="LinkedIn"
+            target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Lucas Lustosa — Portfólio. Feito com HTML5, CSS3 e JS.</p>
+  </footer>
+</body>
+</html>
