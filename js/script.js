@@ -36,7 +36,7 @@ siteNav?.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => siteNav.classList.remove('open'));
 });
 
-// Rolagem suave com offset opcional (já temos CSS scroll-behavior)
+// Rolagem suave com offset opcional (já tem CSS scroll-behavior)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const targetId = this.getAttribute('href');
